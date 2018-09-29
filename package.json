@@ -1,0 +1,23 @@
+{
+  "name": "voteridbot",
+  "version": "1.0.0",
+  "description": "VoterID Bot (Dr. Danielle Mitchell for US Congress [TN-03])",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "voterid",
+    "voter",
+    "chatbot",
+    "voter",
+    "facebook",
+    "chat"
+  ],
+  "author": "Patrick Noland",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
