@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const messageWebhookController = require('./controllers/messageWebhook.js').default;
+const messageWebhookController = require('./controllers/messageWebhook.js');
 const verificationController = require('./controllers/verification.js');
 
 const app = express();
