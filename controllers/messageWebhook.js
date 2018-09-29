@@ -1,6 +1,6 @@
-const processMessage = require('../helpers/processMessage.js');
+import processMessage from '../helpers/processMessage.js';
 
-module.exports = (req, res) => {
+export default (req, res) => {
     if (req.body.object === 'page') {
         req.body.entry.forEach(entry => {
             entry.messaging.forEach(event => {

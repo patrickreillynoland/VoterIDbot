@@ -1,7 +1,8 @@
-const APIAI_TOKEN = "3806a234537d4910a45ce264a5ec7586";
-const apiaiClient = require('apiai')(APIAI_TOKEN);
+/*The old tokens are dead, don't even try it.*/
 
-const FACEBOOK_ACCESS_TOKEN = "EAAHvoZA36ZBAABAKOtyQH8PXdpTxGlgfPbyMWpTH9R2XR8AXx7i8fwz0F0D8Jg66PAQpp41XsPPdTRC1uTjzo96wPlCZB5azcOvzxZBTSthGsFZAsirPM1I1aOvmdILFwx529VYGAKHUpQ5ZBC0qUM1EqsamZCPEZBZA8T6stIcWtKgZDZD";
+const APIAI_TOKEN = process.env.APIAI_TOKEN;
+const FACEBOOK_ACCESS_TOKEN = process.env.FACEBOOK_ACCESS_TOKEN;
+const apiaiClient = require('apiai')(APIAI_TOKEN);
 const request = require('request');
 
 const sendTextMessage = (senderId, text) => {
