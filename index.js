@@ -10,14 +10,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.listen(process.env.PORT || 3000);
 
-app.get('/', function(req, res) {
-    res.send("The webhook is hooked")
-});
-
-/*once the verification and webhooks are ready
-
 app.get('/', verificationController);
 app.post('/', messageWebhookController);
-
-*/
 
